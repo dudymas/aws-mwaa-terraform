@@ -150,7 +150,7 @@ resource "aws_mwaa_environment" "mwaa_environment" {
 
   network_configuration {
     security_group_ids = [aws_security_group.mwaa.id]
-    subnet_ids         = aws_subnet.private_subnets.*.id
+    subnet_ids         = ["subnet-041f15a648dd616ee", "subnet-06acf0c179b643c65"]
   }
 
   logging_configuration {
